@@ -10,7 +10,7 @@ public class Main {
         Student student = new Student();
         student.setFirstName("Ivan");
         student.setLastName("Petrov");
-        student.setEmail("iffffu@example.com");
+        student.setEmail("igiu@example.com");
 
         try {
             entityManager.getTransaction().begin();

@@ -5,21 +5,24 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 @Entity
-@Table(name = "homework")
+@Table(name = "homeworks")
 
 public class Homework {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "description", length = 500, nullable = false)
     private String description;
 
+    @Column(name = "deadline", nullable = false)
     private LocalDate deadline;
 
+    @Column(name = "mark", nullable = false)
     private int mark;
 
     @ManyToOne
-    @JoinColumn(name = "student_id")
+    @JoinColumn(name = "student_id", nullable = false)
     private Student student;
 
     // Геттери і сеттери
