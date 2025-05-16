@@ -1,0 +1,8 @@
+Use Test;
+CREATE TABLE IF NOT EXISTS students (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255),
+    PRIMARY KEY (id)
+);
+SELECT * FROM students
